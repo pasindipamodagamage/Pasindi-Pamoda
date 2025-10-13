@@ -1,18 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*:root {*/
+/*  --clr-heading: #111135;*/
+/*  --clr-body: #565656;*/
+/*  --clr-bg: #f3f3f3;*/
+/*  --clr-def: #ff508e;*/
+/*  --clr-def-2: #d450ff;*/
+/*  --clr-ftr: #070E27;*/
+/*  --clr-ftr-2: #666666;*/
+/*  --clr-ftr-3: #323232;*/
+/*  --clr-white: #fff;*/
+/*  --clr-black: #000;*/
+/*  --font-1: 'Poppins', sans-serif;*/
+/*  --font-2: 'Montserrat', sans-serif;*/
+/*  --rad-1: 4px; }*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 :root {
-  --clr-heading: #111135;
-  --clr-body: #565656;
-  --clr-bg: #f3f3f3;
-  --clr-def: #ff508e;
-  --clr-def-2: #d450ff;
-  --clr-ftr: #070E27;
+  --clr-heading: #05000D;        /* Almost black for headings */
+  --clr-body: #590E3F;           /* Dark purple for body text */
+  --clr-bg: #F5F5F5;             /* Light gray background */
+  --clr-def: #73022C;            /* Deep red/maroon primary */
+  --clr-def-2: #590E3F;          /* Dark purple secondary */
+  --clr-ftr: #130A26;            /* Dark indigo for footer */
   --clr-ftr-2: #666666;
   --clr-ftr-3: #323232;
   --clr-white: #fff;
-  --clr-black: #000;
+  --clr-black: #05000D;          /* Almost black */
   --font-1: 'Poppins', sans-serif;
   --font-2: 'Montserrat', sans-serif;
-  --rad-1: 4px; }
+  --rad-1: 4px;
+}
 
 /*-------------------------------------------------------
 02. Mixins Css #070E27
@@ -21,10 +38,12 @@
 1. Typography css
 ---------------------------------------------------------*/
 *, *:before, *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 * {
-  scroll-behavior: inherit !important; }
+  scroll-behavior: inherit !important;
+}
 
 html, body {
   height: auto;
@@ -43,7 +62,9 @@ body {
   line-height: 3rem;
   letter-spacing: 0.005em;
   color: var(--clr-body);
-  position: relative; }
+  position: relative;
+  background-color: #F5F5F5;
+}
 
 a {
   color: var(--clr-body); }
@@ -171,7 +192,7 @@ label {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background: url(assets/img/logo/pre-loader.gif) center no-repeat var(--clr-white);
+  background: url(assets/images/loaded.gif) center no-repeat var(--clr-white);
   text-align: center; }
 
 .h-100 {
