@@ -219,7 +219,7 @@
         .cert-card {
             background: #fff;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             transition: transform 0.3s, box-shadow 0.3s;
             cursor: pointer;
@@ -227,7 +227,7 @@
 
         .cert-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
 
         .cert-card img {
@@ -387,28 +387,24 @@
             <div class="container">
                 <div class="row g-5">
                     <div class="col-xl-8">
-                        <div class="hero-content-2 wow fadeInLeft" data-wow-duration="4s" data-wow-delay=".2s"
-                             style="visibility: visible; animation-duration: 4s; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                        <div class="hero-content-2 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s">
                             <div class="hero-desc">
-                                <h5 class="hero-sub-title">
-                                    Pasindi Pamoda Gamage
-                                </h5>
+                                <h5 class="hero-sub-title">Pasindi Pamoda Gamage</h5>
                                 <h2 class="hero-title">
                                     I’m a
+                                    <br>
                                     <span class="typed-strings" style="display: none;">
-											  <span class="type_color">Full Stack Developer</span>
-											  <span class="type_color">UI/UX Designer</span>
-										</span>
-                                    <span class="typed"> Full Stack Developer </span>
+                                     <span class="type_color">UI/UX Designer</span>
+                                     <span class="type_color">FullStack Developer</span>
+                                    </span>
+                                    <span class="typed">UI/UX Designer</span>
                                     <span class="typed-cursor typed-cursor--blink">|</span>
                                 </h2>
                                 <div class="header-description">
-                                    <p>
-                                        I simplify the complex.
-                                    </p>
+                                    <p>I simplify the complex.</p>
                                 </div>
                                 <div class="hero-btn">
-                                    <a href="#home" target="_blank" class="tm-btn-1 demo2">
+                                    <a href="#certificates-section" target="_blank" class="tm-btn-1 demo2">
                                         Go To Gallery <i class="fas fa-chevron-right"></i>
                                     </a>
                                 </div>
@@ -416,13 +412,13 @@
                         </div>
                     </div>
                     <div class="col-xl-4">
-                        <div class="hero-2-img wow fadeInRight" data-wow-duration="4s" data-wow-delay=".2s"
-                             style="visibility: visible; animation-duration: 4s; animation-delay: 0.2s; animation-name: fadeInRight;">
+                        <div class="hero-2-img wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.3s">
                             <img src="assets/images/home-image-prof.png" alt="thumb">
                         </div>
                     </div>
                 </div>
             </div>
+
             <div id="jarallax-container-0"
                  style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -100;">
                 <div style="background-position: 50% 50%; background-size: 100%; background-repeat: no-repeat; background-image:url(&quot;https://rxdtheme.com/html/themetum/koyta/dark/koyta-two/assets/img/02_koyta_img/02.header.jpg&quot;);position: fixed; top: 0px; left: 0px; width: 1618.25px; height: 747.6px; overflow: hidden; pointer-events: none;margin-left: -48.7274px; margin-top: 0.2px; visibility: visible; transform: translateY(-130.76px) translateZ(0px);">
@@ -457,21 +453,21 @@
                                     Hi there, I’m Nagoda Gamage Pasindi Pamoda
                                 </h2>
                                 <h5 class="about-title-3">
-                                    Full Stack Developer in Sri Lanka
+                                    FullStack Developer in Sri Lanka
                                 </h5>
                                 <div class="about-txt mb-30">
                                     <p>
-                                        I am Nagoda Gamage Pasindi Pamoda, a 23 year old undergraduate software
-                                        engineering student who enjoys programming
-                                        and exploring new technologies. I love solving real world problems through
-                                        creative technical solutions, always with
-                                        curiosity and drive. Collaboration and communication are my strengths, and
-                                        I enjoy making an impact in the tech
-                                        world by bringing fresh ideas to life.
+                                        I’m a 23-year-old undergraduate software engineering student with a passion for
+                                        programming and exploring new technologies. I thrive on solving real-world
+                                        problems through innovative technical solutions, fueled by curiosity and
+                                        determination. Collaboration and clear communication are my strengths, and I’m
+                                        driven to make a meaningful impact in the tech world by transforming fresh ideas
+                                        into reality. In my leisure time, I enjoy traveling, designing user interfaces,
+                                        and building websites, which keeps my creativity sharp and my skills evolving.
                                     </p>
                                 </div>
                                 <div class="about-btns">
-                                    <a href="https://rxdtheme.com/html/themetum/koyta/dark/koyta-two/index-9.html#"
+                                    <a href="cv-link"
                                        class="tm-btn-2">
                                         Download CV
                                         <i class="fas fa-arrow-down"></i>
@@ -484,7 +480,7 @@
             </div>
 
             <!-- Certificates Section -->
-            <div class="certificates">
+            <div class="certificates" id="certificates-section">
                 <div class="site-title text-center">
                     <h5 class="about-sub-title">My Certifications</h5>
                 </div>
@@ -791,6 +787,15 @@
         }
     }
 </style>
+<script>
+    new WOW({
+        boxClass: 'wow',      // default
+        animateClass: 'animated', // default
+        offset: 150,          // start animation when 100px visible
+        mobile: true,
+        live: true
+    }).init();
+</script>
 
 </body>
 </html>
