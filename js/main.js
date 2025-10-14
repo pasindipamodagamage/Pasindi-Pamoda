@@ -411,3 +411,10 @@
     }); // end document ready function
 })(jQuery); // End jQuery
 
+	new WOW({
+	boxClass: 'wow',
+	animateClass: 'animated',
+	offset: 150,
+	mobile: true,
+	live: true
+}).init();
